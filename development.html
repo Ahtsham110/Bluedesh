@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Development - BlueDesh</title>
+</head>
+
+   <!-- Moible Header -->
+
+   <header id="top" class="w-full flex-col fixed sm:relative bg-white pin-t pin-r pin-l md:hidden   ">
+     
+    <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none">
+        <div class="w-full sm:w-auto self-start flex flex-row sm:flex-none flex-no-wrap justify-between sm:mr-auto">
+            <a href="index.html">
+                <div class="logo-container flex space-x-4 items-center align-middle">
+                    <img src="images/Group 1.png" alt="">
+                    <img class="lg:w-auto w-24" src="images/BlueDesh.png" alt="">
+                </div>
+            </a>   
+            <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button"
+                onclick="navToggle();">
+                <span class="hamburger__top-bun"></span>
+                <span class="hamburger__bottom-bun"></span>
+                
+            </button>
+        </div>
+
+  
+
+        <div id="menu"
+            class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row py-8 h-full pb-4 sm:py-0 sm:pb-0 space-x-2 space-y-2 hidden">
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="index.html"> </a>
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="index.html">Home</a>
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="development.html">Web Development</a>
+                    
+                    
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="seo.html">Search Engine Optimization</a>
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="portfolio.html">Portfolio</a>
+  
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="about.html">About
+                Us</a>
+               
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="contact.html">Contact
+                Us</a>
+
+          
+
+        </div>
+    </nav>
+</header>
+
+<!-- Desktop Header -->
+<header class="nav-sticky hidden md:flex w-full">
+    <section class="w-full">
+  
+        <!-- Main-Wrapper -->
+  
+        <div class="main-wrapper w-[90%] mx-auto flex justify-between align-middle items-center py-3">
+            <!-- Logo Container -->
+  
+            <a href="index.html">
+                <div class="logo-container flex space-x-4 items-center align-middle">
+                    <img src="images/Group 1.png" alt="">
+                    <img class="lg:w-auto w-24" src="images/BlueDesh.png" alt="">
+                </div>
+            </a>
+  
+            <!-- Menu Links -->
+  
+            <div class="space-x-5 hidden md:flex">
+                <a class="font-semibold text-black hover:text-primary transition-colors" href="index.html">Home</a>
+  
+                <div class="dropdown inline-block relative group">
+                    <button
+                        class="font-semibold bg-white text-black hover:text-primary transition-colors rounded items-center inline-flex">
+                        <span class="mr-1">Services</span>
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden bg-gray-200 rounded-[5px]  pb-4 pt-5 px-3 mt-[5.5px] space-y-3 transition-all ease-in-out z-20 shadow-md group-hover:block">
+                        
+                        <li class="bg-gray-200 w-8 h-6 -mt-5 -mb-4 transform rotate-45 rounded-sm"></li>
+  
+                            <li class="w-56"><a class="font-semibold text-black hover:text-primary transition-colors w-auto"
+                                    href="seo.html">Search Engine Optimization</a></li>
+                        <li class="w-48"><a class="font-semibold text-black hover:text-primary transition-colors w-auto"
+                                href="development.html">Web Development</a></li>
+                        
+  
+                    </ul>
+                </div>
+  
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="portfolio.html">Portfolio</a>
+  
+  
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="about.html">About
+                Us</a>
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="contact.html">Contact
+                Us</a>
+            
+  
+            </div>
+  
+            <!-- Hamburger and Button -->
+  
+            <div class="button">
+                <a href="#" class="bg-primary text-white font-semibold uppercase px-6 py-2 rounded-md border-2 border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 ease-in-out">
+                    Get Started </a>
+            </div>
+  
+    
+  
+  
+  
+  
+        </div>
+  
+  
+    </section>
+  </header>
+<!-- Body -->
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero py-24 bg-tertiary">
+
+        <!-- Main-Wrapper -->
+        <div class="w-[90%] gap-4 justify-between items-center mx-auto space-y-16 md:flex">
+            <!-- Content-Div -->
+
+            <div class="Left md:w-2/4 space-y-2">
+
+                <p class="text-primary font-semibold">
+                    Web Development
+                </p>
+
+                <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-10"> </div>
+
+
+                <div class="space-y-12">
+                    <h1 style=" line-height: 1.2;" class="text-5xl text-black font-bold">
+                        React & Tailwind
+                        <span class="text-primary">Web Development</span>
+                    </h1>
+
+
+
+                    <p class="text-black md:w-3/4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime distinctio natus
+                        aliquam amet laudantium consequuntur excepturi aliquid doloribus molestias?
+                    </p>
+
+                    <div class="button">
+                        <a href="#"
+                            class="bg-primary text-white font-semibold uppercase px-6 py-2 rounded-lg border-2 border-primary hover:bg-transparent hover:text-primary transition-colors">
+                            Get Started </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Image Div -->
+
+            <div class="Right md:w-2/4 items-center justify-center ">
+
+                <img src="images/OrgCoral_Ofc-01_Concept-06.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <img src="images/wavesOpacity.svg" alt="">
+
+
+    <!-- Second Section -->
+    <section class="hero py-24">
+
+        <!-- Main-Wrapper -->
+        <div class="w-[90%] justify-between items-center mx-auto md:flex">
+            <!-- Image-Div -->
+            <div class="Left md:w-2/4">
+                <img class="md:w-4/5" src="images/20943839.jpg" alt="">
+
+            </div>
+
+
+            <!-- Content Div -->
+
+            <div class="Right space-6 md:w-2/4 space-y-2">
+
+                <p class="text-primary font-semibold">
+                    Modern Design
+                </p>
+
+                <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-10"> </div>
+
+
+                <div class="space-y-12">
+                    <h1 style=" line-height: 1.2;" class="text-4xl text-black font-bold">
+                        No Worries<span class="text-primary">, We are Handling Everything</span>
+                    </h1>
+
+
+
+                    <p class="text-black md:w-3/4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime distinctio natus
+                        aliquam amet laudantium consequuntur excepturi aliquid doloribus molestias?
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-8 bg-tertiary ">
+
+        <!-- Main-Wrapper -->
+        <div class="w-[90%] justify-between items-center mx-auto space-y-16">
+            <!-- Top Container -->
+            <div class="space-x-y-6 space-y-2">
+
+                <p class="text-primary font-semibold">
+                    Steps We Follow
+                </p>
+
+                <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-10"> </div>
+
+
+                <h2 style=" line-height: 1.2;" class="text-4xl text-black font-bold">
+                    Our<span class="text-primary"> Process</span>
+                </h2>
+               
+
+
+            </div>
+
+             <!--  Grid -->
+             <div class="grid lg:grid-cols-3 grid-cols-1 justify-between gap-16 w-[95%] mx-auto ">
+
+                <div class="first py-6 space-y-6">
+
+                    <img class="mb-16 rounded-sm h-2/4" src="images/UI.jpg" alt="">
+                    <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-24 mx-auto mb-24"> </div>
+
+                    <div class="space-y-2">
+                        <p class="bg-primary rounded-full py-2 px-1 w-8 text-center font-bold text-white text-xs">1
+                        </p>
+                        <h3 class="text-[1.1rem] font-[700]"> UX & UI <span class="text-primary">Design</span></h3>
+                        <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. consectetur
+                            adipisicing elit. consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="first py-6 space-y-6">
+
+                    <img class="mb-16 rounded-sm h-2/4" src="images//seo vector.jpg" alt="">
+                    <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-24 mx-auto mb-24"> </div>
+
+                    <div class="space-y-2">
+                        <p class="bg-primary rounded-full py-2 px-1 w-8 text-center font-bold text-white text-xs">2
+                        </p>
+                        <h3 class="text-[1.1rem] font-[700]"> Talk to SEO <span class="text-primary">Team</span>
+                        </h3>
+                        <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. consectetur
+                            adipisicing elit. consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="first py-6 space-y-6">
+                    <img class="mb-16 rounded-sm h-2/4" src="images/Web vector.jpg" alt="">
+                    <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-24 mx-auto mb-24"> </div>
+
+                    <div class="space-y-2">
+                        <p class="bg-primary rounded-full py-2 px-1 w-8 text-center font-bold text-white text-xs">3
+                        </p>
+                        <h3 class="text-[1.1rem] font-[700]"> Start Building the<span class="text-primary">
+                                Site</span></h3>
+                        <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. consectetur
+                            adipisicing elit. consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Call to Actions -->
+    <section class="py-8">
+        <!-- Main Wrapper -->
+        <div class="w-[90%] justify-between items-center mx-auto space-y-16">
+                <!-- Top Container -->
+            
+
+                <!-- Grid -->
+
+                <div class="md:flex items-center gap-6">
+
+                    <div class="Left md:w-2/4 space-y-2">
+
+                        <p class="text-primary font-semibold">
+                            Search Engine Optimization
+                        </p>
+    
+                        <div class="line h-0.5 rounded-sm bg-primary p-0.5 w-10"> </div>
+    
+    
+                        <div class="space-y-12">
+                            <h1 class="text-5xl text-black font-bold leading-tight lg:w-3/4">
+                                Get Your
+                                <span class="text-primary"> Website Now!</span>
+                            </h1>
+    
+    
+    
+                            <p class="text-black md:w-3/4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime distinctio natus
+                                aliquam amet laudantium consequuntur excepturi aliquid doloribus molestias?
+                            </p>
+    
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="Right md:w-[45%]">  
+                        <img src="images/4300580.jpg" alt="">
+                    </div>
+
+                </div>
+
+
+                  <!-- Main-Wrapper -->
+   
+            </div>
+
+
+    
+
+    </section>
+    
+
+
+</body> 
+
+<!-- Footer -->
+<script>
+    var nav = document.getElementById('site-menu');
+    var header = document.getElementById('top');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY >= 400) { // adjust this value based on site structure and header image height
+            nav.classList.add('nav-sticky');
+            header.classList.add('pt-scroll');
+        } else {
+            nav.classList.remove('nav-sticky');
+            header.classList.remove('pt-scroll');
+        }
+    });
+
+    function navToggle() {
+        var btn = document.getElementById('menuBtn');
+        var nav = document.getElementById('menu');
+
+        btn.classList.toggle('open');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');
+    }
+</script>   
+
+<footer class="bg-tertiary py-8">
+    <!-- Main-wrapper + Grid -->
+
+    <div class="py-6 w-[90%] mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 space-y-2 md:space-y-4 md:space-x-6">
+
+        <!-- Logo and Text -->
+
+        <div class="logo-container space-y-3 lg:mr-12">
+            <div class="flex space-x-4 items-center">
+                <img src="images/Group 1.png" alt="">
+                <img src="images/BlueDesh.png" alt="">
+            </div>
+            <p class="font-normal"> A Digital Marketing Agency that helps start-ups to
+                generate their leads and buid their online presence by provding Web Development services.
+
+            </p>
+        </div>
+
+        <!-- Quicklinks -->
+
+        <div class="quicklinks">
+            <h6 class="text-primary font-bold mb-4 text-lg"> Quicklinks</h6>
+
+            <div class="footer-links-wrapper list-none align-middle mt-8">
+                <ul class="space-y-2">
+                    <li> <a href="home.html" class="footer-links font-medium hover:text-primary transition-colors">
+                            Home</a>
+                    </li>
+                    <li> <a href="about.html" class="footer-links font-medium hover:text-primary transition-colors">
+                            About</a>
+                    </li>
+                    </li>
+                    <li> <a href="contact.html" class="footer-links font-medium hover:text-primary transition-colors">
+                            Contact</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Services Links -->
+
+        <div class="services">
+            <h6 class="text-primary font-bold mb-4 text-lg"> Our Services</h6>
+
+            <div class="footer-links-wrapper list-none align-middle mt-8">
+                <ul class="space-y-2">
+                    
+
+                    <li> <a href="seo.html" class="footer-links font-medium hover:text-primary transition-colors">
+                        Search Engine Optimization</a>
+                    </li>
+                    
+                    <li> <a href="development.html" class="footer-links font-medium hover:text-primary transition-colors">
+                            Web Development</a>
+                    </li>
+                    
+                    <li> <a href="portfolio.html" class="footer-links font-medium hover:text-primary transition-colors">
+                        Portfolio</a>
+                </li>
+                
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="social">
+            <h6 class="text-primary font-bold mb-5 text-lg"> Social</h6>
+
+            <div class="footer-links-wrapper list-none align-middle">
+                <ul class="space-y-3">
+                    <li> <a href="https://www.upwork.com/o/companies/~01d27324b9d0fa5581/"
+                            class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                                class="h-5 w-5 mr-2" src="images/upwork-icon.png" alt=""></a>
+                    </li>
+
+                    <li> <a href="https://www.linkedin.com/company/80974218/"
+                            class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                                class="h-5 w-5 mr-2" src="images/icons8-linkedin-2-30.png" alt=""></a>
+                    </li>
+
+                    <li> <a href="https://www.fiverr.com/ahtsham003/"
+                            class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                                class="h-5 w-5 mr-2" src="images/icons8-fiverr-30.png" alt=""></a>
+                    </li>
+
+                    <li> <a href="https://web.facebook.com/BlueDesh/about"
+                            class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                                class="h-5 w-5 mr-2" src="/images/facebook-3-2.svg" alt=""></a>
+                    </li>
+
+
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</footer>
+
+</html>

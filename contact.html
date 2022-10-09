@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us ~ Bluedesh</title>
+</head>
+
+
+   <!-- Moible Header -->
+
+   <header id="top" class="w-full flex-col fixed sm:relative bg-white pin-t pin-r pin-l md:hidden   ">
+     
+    <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none">
+        <div class="w-full sm:w-auto self-start flex flex-row sm:flex-none flex-no-wrap justify-between sm:mr-auto">
+            <a href="index.html">
+                <div class="logo-container flex space-x-4 items-center align-middle">
+                    <img src="images/Group 1.png" alt="">
+                    <img class="lg:w-auto w-24" src="images/BlueDesh.png" alt="">
+                </div>
+            </a>   
+            <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button"
+                onclick="navToggle();">
+                <span class="hamburger__top-bun"></span>
+                <span class="hamburger__bottom-bun"></span>
+                
+            </button>
+        </div>
+
+  
+
+        <div id="menu"
+            class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row py-8 h-full pb-4 sm:py-0 sm:pb-0 space-x-2 space-y-2 hidden">
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="index.html"> </a>
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="index.html">Home</a>
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="development.html">Web Development</a>
+                    
+                    
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="seo.html">Search Engine Optimization</a>
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="portfolio.html">Portfolio</a>
+  
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="about.html">About
+                Us</a>
+               
+
+            <a class="font-semibold text-black hover:text-primary transition-colors" href="contact.html">Contact
+                Us</a>
+
+          
+
+        </div>
+    </nav>
+</header>
+
+<!-- Desktop Header -->
+
+<header class="nav-sticky hidden md:flex w-full">
+  <section class="w-full">
+
+      <!-- Main-Wrapper -->
+
+      <div class="main-wrapper w-[90%] mx-auto flex justify-between align-middle items-center py-3">
+          <!-- Logo Container -->
+
+          <a href="index.html">
+              <div class="logo-container flex space-x-4 items-center align-middle">
+                  <img src="images/Group 1.png" alt="">
+                  <img class="lg:w-auto w-24" src="images/BlueDesh.png" alt="">
+              </div>
+          </a>
+
+          <!-- Menu Links -->
+
+          <div class="space-x-5 hidden md:flex">
+              <a class="font-semibold text-black hover:text-primary transition-colors" href="index.html">Home</a>
+
+              <div class="dropdown inline-block relative group">
+                  <button
+                      class="font-semibold bg-white text-black hover:text-primary transition-colors rounded items-center inline-flex">
+                      <span class="mr-1">Services</span>
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden bg-gray-200 rounded-[5px]  pb-4 pt-5 px-3 mt-[5.5px] space-y-3 transition-all ease-in-out z-20 shadow-md group-hover:block">
+                      
+                      <li class="bg-gray-200 w-8 h-6 -mt-5 -mb-4 transform rotate-45 rounded-sm"></li>
+
+                          <li class="w-56"><a class="font-semibold text-black hover:text-primary transition-colors w-auto"
+                                  href="seo.html">Search Engine Optimization</a></li>
+                      <li class="w-48"><a class="font-semibold text-black hover:text-primary transition-colors w-auto"
+                              href="development.html">Web Development</a></li>
+                      
+
+                  </ul>
+              </div>
+
+          <a class="font-semibold text-black hover:text-primary transition-colors" href="portfolio.html">Portfolio</a>
+
+
+          <a class="font-semibold text-black hover:text-primary transition-colors" href="about.html">About
+              Us</a>
+          <a class="font-semibold text-black hover:text-primary transition-colors" href="contact.html">Contact
+              Us</a>
+          
+
+          </div>
+
+          <!-- Hamburger and Button -->
+
+          <div class="button">
+              <a href="#" class="bg-primary text-white font-semibold uppercase px-6 py-2 rounded-md border-2 border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 ease-in-out">
+                  Get Started </a>
+          </div>
+
+  
+
+
+
+
+      </div>
+
+
+  </section>
+</header>
+
+    <!-- Body -->
+<body>
+
+
+
+<section class="main w-[90%] mx-auto py-28">
+ 
+ <!--Heading --> 
+ <div class="text-center mb-16">
+        
+  <h3 class="text-2xl sm:text-4xl leading-normal font-bold tracking-tight text-gray-900">
+    Our Team will Assist You in <span class="text-primary"> any Difficulty</span>
+  </h3>
+</div>
+    
+    <!-- Contact Info -->
+
+      <div class="grid md:grid-cols-3 grid-cols-1 md:w-4/5 bg-white items-center justify-center gap-6 mx-auto mb-12"> 
+        <div class="bg-white rounded-sm mx-auto shadow-xl px-8 py-4 text-center"> 
+
+          <p class="font-normal text-primary">
+            Email
+          </p>
+        <p>Lorem ipsum? Mollitia nam quaerat, provident aspernatur officia debitis hic quas quo architecto nostrum quos reprehenderit ducimus!
+              </p>        
+              </div>
+
+        <div class="bg-white rounded-sm mx-auto shadow-xl px-8 py-4 text-center"> 
+
+          <p class="font-normal text-primary">
+            Email
+          </p>
+        <p>Lorem ipsum Mollitia nam quaerat, provident aspernatur officia debitis hic quas quo architecto nostrum quos reprehenderit ducimus!
+        </p>      
+  </div>
+
+        <div class="bg-white rounded-sm mx-auto shadow-xl px-8 py-4 text-center"> 
+
+          <p class="font-normal text-primary">
+            Email
+          </p>
+        <p>Lorem ipsum Mollitia nam quaerat, provident aspernatur officia debitis hic quas quo architecto nostrum quos reprehenderit ducimus!
+        </p>       
+
+</div>
+      </div>
+    
+    <!-- Form -->
+  
+    <div class="shadow-xl bg-white rounded-sm md:w-4/5 mx-auto">
+      <form class="shadow-sm bg-white rounded-sm p-12">
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-first-name">
+              First Name
+            </label>
+            <input class="appearance-none block w-full  text-gray-700 border focus:border-primary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+            
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-last-name">
+              Last Name
+            </label>
+            <input class="appearance-none block w-full  text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-primary" id="grid-last-name" type="text" placeholder="Doe">
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-password">
+              Email Address
+            </label>
+            <input class="appearance-none block w-full  text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-primary" id="grid-email" type="email" placeholder="********@*****.**">
+          </div>
+        </div>
+          
+          <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-password">
+              Your Message
+            </label>
+            <textarea rows="10" class="appearance-none block w-full text-gray-700 border focus:border-primary border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+              
+            </textarea>
+          </div>
+          <div class="flex justify-between w-full px-3">
+            <div class="md:flex md:items-center">
+              <label class="block text-gray-500 font-bold">
+                <input class="mr-2 leading-tight" type="checkbox">
+                <span class="text-sm text-primary">
+                  Send me your newsletter!
+                </span>
+              </label>
+            </div>
+            <button class="shadow bg-primary hover:-translate-y-2 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded" type="submit">
+              Send Message
+            </button>
+          </div>
+            
+        </div>
+          
+      </form>
+    </div>
+  
+  
+  </div>
+ </div>
+</section>
+
+    <!-- Footer -->
+
+    
+</body>
+<script>
+  var nav = document.getElementById('site-menu');
+  var header = document.getElementById('top');
+
+  window.addEventListener('scroll', function () {
+      if (window.scrollY >= 400) { // adjust this value based on site structure and header image height
+          nav.classList.add('nav-sticky');
+          header.classList.add('pt-scroll');
+      } else {
+          nav.classList.remove('nav-sticky');
+          header.classList.remove('pt-scroll');
+      }
+  });
+
+  function navToggle() {
+      var btn = document.getElementById('menuBtn');
+      var nav = document.getElementById('menu');
+
+      btn.classList.toggle('open');
+      nav.classList.toggle('flex');
+      nav.classList.toggle('hidden');
+  }
+</script>   
+
+
+    <!-- Footer -->
+<footer class="bg-tertiary py-8">
+  <!-- Main-wrapper + Grid -->
+
+  <div class="py-6 w-[90%] mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 space-y-2 md:space-y-4 md:space-x-6">
+
+      <!-- Logo and Text -->
+
+      <div class="logo-container space-y-3 lg:mr-12">
+          <div class="flex space-x-4 items-center">
+              <img src="images/Group 1.png" alt="">
+              <img src="images/BlueDesh.png" alt="">
+          </div>
+          <p class="font-normal"> A Digital Marketing Agency that helps start-ups to
+              generate their leads and buid their online presence by provding Web Development services.
+
+          </p>
+      </div>
+
+      <!-- Quicklinks -->
+
+      <div class="quicklinks">
+          <h6 class="text-primary font-bold mb-4 text-lg"> Quicklinks</h6>
+
+          <div class="footer-links-wrapper list-none align-middle mt-8">
+              <ul class="space-y-2">
+                  <li> <a href="home.html" class="footer-links font-medium hover:text-primary transition-colors">
+                          Home</a>
+                  </li>
+                  <li> <a href="about.html" class="footer-links font-medium hover:text-primary transition-colors">
+                          About</a>
+                  </li>
+                  </li>
+                  <li> <a href="contact.html" class="footer-links font-medium hover:text-primary transition-colors">
+                          Contact</a>
+                  </li>
+
+
+
+              </ul>
+
+          </div>
+
+      </div>
+
+      <!-- Services Links -->
+
+      <div class="services">
+          <h6 class="text-primary font-bold mb-4 text-lg"> Our Services</h6>
+
+          <div class="footer-links-wrapper list-none align-middle mt-8">
+              <ul class="space-y-2">
+                  
+
+                  <li> <a href="seo.html" class="footer-links font-medium hover:text-primary transition-colors">
+                      Search Engine Optimization</a>
+                  </li>
+                  
+                  <li> <a href="development.html" class="footer-links font-medium hover:text-primary transition-colors">
+                          Web Development</a>
+                  </li>
+                  
+                  <li> <a href="portfolio.html" class="footer-links font-medium hover:text-primary transition-colors">
+                      Portfolio</a>
+              </li>
+              
+
+
+              </ul>
+
+          </div>
+
+      </div>
+
+      <!-- Social -->
+
+      <div class="social">
+          <h6 class="text-primary font-bold mb-5 text-lg"> Social</h6>
+
+          <div class="footer-links-wrapper list-none align-middle">
+              <ul class="space-y-3">
+                  <li> <a href="https://www.upwork.com/o/companies/~01d27324b9d0fa5581/"
+                          class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                              class="h-5 w-5 mr-2" src="images/upwork-icon.png" alt=""></a>
+                  </li>
+
+                  <li> <a href="https://www.linkedin.com/company/80974218/"
+                          class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                              class="h-5 w-5 mr-2" src="images/icons8-linkedin-2-30.png" alt=""></a>
+                  </li>
+
+                  <li> <a href="https://www.fiverr.com/ahtsham003/"
+                          class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                              class="h-5 w-5 mr-2" src="images/icons8-fiverr-30.png" alt=""></a>
+                  </li>
+
+                  <li> <a href="https://web.facebook.com/BlueDesh/about"
+                          class="footer-links font-medium flex hover:text-primary transition-colors"> <img
+                              class="h-5 w-5 mr-2" src="/images/facebook-3-2.svg" alt=""></a>
+                  </li>
+
+
+
+
+
+              </ul>
+
+          </div>
+
+      </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</footer>
+
+</html>
