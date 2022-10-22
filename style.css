@@ -45,6 +45,10 @@ transform: rotate(0);
 transition: all 0.5s;
 }
 
+#menu {
+  z-index: 999;
+}
+
 .hamburger:hover [class*="-bun"] {
 background: #333;
 }
